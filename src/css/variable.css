@@ -3,6 +3,22 @@ body {
     background-color: #FFF;
 }
 
+.container {
+    max-width: 375px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
 :root {
     --primary-color: #0A224A;
     --light-blue:  #F7FAFF;
