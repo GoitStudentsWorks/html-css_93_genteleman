@@ -4,10 +4,15 @@
     padding-bottom: 16px;
 }
 
-
 .footer-logo-social {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 42px;
+}
+
+.footer-logo-link{
+    display: flex;
+    align-items: center
 }
 
 
@@ -16,7 +21,6 @@
 
 .footer-logo-icon {
     fill: var(--white);
-    margin-bottom: 42px;
 }
 
 
@@ -63,9 +67,16 @@
     margin-bottom: 64px;
 }
 
-.address-menu {}
+.address-menu {
+    /* display: flex;
+    flex-direction: column;
+    gap: 8px; */
 
-.address-menu-item {}
+}
+
+.address-menu-item:first-child {
+    margin-bottom: 8px;
+}
 
 .address-menu-link {
     color: var(--white);
