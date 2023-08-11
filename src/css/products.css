@@ -16,12 +16,22 @@
     font-weight: 400;
     line-height: 1.5em
 }
+
+
+.not-mob-img{
+    display: flex;
+    display: none;
+}
+
 @media screen and (min-width: 768px){
     .container{
         max-width: 736px;
     }
-    .products-list{
+    .product-list{
         display: flex;
         gap: 16px;
+    }
+    .not-mob-img{
+        display: block;
     }
 }
