@@ -12,6 +12,7 @@
 .price-list {
     display: flex;
     flex-direction: column;
+    padding: 0 16px;
 }
 
 .price-li {
@@ -19,10 +20,9 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 0 16px;
 }
 
-.price-li::before, .price-li::after {
+.price-li::before{
     content: '';
     background-color: var(--primary-color);
     position: absolute;
@@ -32,6 +32,17 @@
     width: 100%;
     height: 1px;
 }
+
+.price-li:last-child::after {
+        content: '';
+            background-color: var(--primary-color);
+            position: absolute;
+            z-index: 1000;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+}
+
 
 .price-item {
     color: var(--primary-color);
