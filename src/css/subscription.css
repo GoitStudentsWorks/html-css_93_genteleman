@@ -1,0 +1,95 @@
+.subscribe {
+}
+
+.subscribe-area {
+    padding: 64px 0;
+}
+
+.subcribe-tittle {
+    font-family: inherit;
+    color: var(--primary-color);
+    font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subscribe-text {
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.input-element {}
+
+.input-label{
+    display: none;
+}
+.input-area{
+    width: 100%;
+    height: 50px;
+    padding: 11px 20px;
+    border: 1px solid var(--light-gray);
+}
+
+.input-area:hover{
+    border-color: var(--primary-color);
+}
+
+.check{
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    
+}
+
+.check-text-wrap{
+    display: flex;
+    align-items: center;
+
+}
+
+.subscribe-button {
+    color: var(--white);
+    background-color: var(--primary-color);
+    display: flex;
+    width: 224px;
+    height: 50px;
+    padding: 17px 65px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-bottom: 32px;
+}
+
+.subscribe-button:hover, 
+.subscribe-button:focus{
+    background: #061835;
+}
+
+.subscribe-img{
+    display: block;
+    width: 100%;
+}
+
+.check-span{
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--light-gray);
+    display: inline-flex;
+    margin-right: 8px;
+    
+}
+
+.check-icon{
+}
