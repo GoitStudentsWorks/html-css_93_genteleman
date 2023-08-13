@@ -60,8 +60,6 @@
     letter-spacing: 0.01em;
 }
 
-
-
 .address-menu-item:first-child {
     margin-bottom: 8px;
 }
@@ -135,6 +133,10 @@
     max-width: 768px;
 }
 
+.footer {
+    padding: 36px 32px;
+}
+
 .footer-div {
     display: flex;
     flex-wrap: wrap;
@@ -182,12 +184,19 @@
 
 .address {
     order: 3;
+    max-height: 72px;
 }
 
 .address-menu {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.address-menu-link-tel,
+.address-menu-link-mail {
+    font-size: 19px;
+
 }
 
 .address-menu-link-mail {
@@ -197,4 +206,51 @@
 .address-menu-item:first-child {
     margin-bottom: 0;
 }
+
+.footer-social-icon {
+    width: 40px;
+    height: 40px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+.container {
+    max-width: 1440px;
+}
+
+.footer {
+    padding: 36px 60px;
+}
+
+.footer-div {
+    max-height: 262px;
+}
+
+.footer-logo-link {
+    margin-bottom: 39px;
+}
+
+.footer-navigation {
+    order: 3;
+    padding-top: 8px;
+    margin-bottom: 32px;
+}
+
+.footer-navigation-menu {
+    flex-direction: row;
+    gap: 30px;
+}
+
+.place-time {
+    order: 2;
+    /* margin-bottom: 35px; */
+}
+/* 
+.address{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+} */
+
 }
