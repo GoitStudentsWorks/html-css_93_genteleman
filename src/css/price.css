@@ -4,8 +4,8 @@
 
 
 .section-price {
-    padding: 64px 0;
     display: flex;
+    margin-bottom: 64px;
 }
 
 
@@ -73,7 +73,7 @@
 
 
       .section-price {
-            padding: 100px 0;
+        margin-bottom: 100px;
         }
 }
 
