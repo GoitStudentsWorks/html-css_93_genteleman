@@ -47,7 +47,7 @@
     border-color: var(--primary-color);
 }
 
-.check{
+.check-label{
     color: var(--gray);
     display: flex;
     align-items: center;
@@ -89,8 +89,21 @@
     border: 1px solid var(--light-gray);
     display: inline-flex;
     margin-right: 8px;
-    
+    fill: transparent;
 }
 
-.check-icon{
+.check-input:checked + .check-label span {
+    background-color: var(--primary-color);
+    fill: var(--white);
+}
+
+.subscribe-img{
+    display: block;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution:192dpi){
+    .subscribe-img{
+
+    }
 }
