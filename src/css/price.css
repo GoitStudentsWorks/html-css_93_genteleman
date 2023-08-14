@@ -12,7 +12,6 @@
 .price-list {
     display: flex;
     flex-direction: column;
-    padding: 0 16px;
 }
 
 .price-li {
@@ -80,5 +79,9 @@
 @media screen and (min-width: 1440px) {
      .container {
         max-width: 1320px;
+    }
+
+    .prices {
+        width: 1096px;
     }
 }
