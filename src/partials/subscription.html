@@ -2,43 +2,47 @@
     <main>
         <section id="subscription" class="subscribe container">
             <div class="subscribe-area">
-                <h2 class="subcribe-tittle">Newsletter</h2>
-                <p class="subscribe-text">Every week we will send you new designs and information about sales.</p>
-                <form action="" class="input-form">
-                    <div class="input-element">
-                        <label for="user-name" class="input-label">Name</label>
-                        <input type="text" 
-                        name="user-name" 
-                        id="user-name" 
-                        minlength="2" maxlength="16" 
-                        placeholder="Name"
-                        class="input-area">
-                    </div>
-                    <div class="input-element">
-                        <label for="email" class="input-label">Email</label>
-                        <input type="email" 
-                        name="email"
-                        id="email" 
-                        placeholder="E-mail" 
-                        class="input-area">
-                    </div>
-                    <div class="input-element check-text-wrap">
-                        <input type="checkbox" name="user-subscribe" id="user-subscribe" value="true" class="check-input visually-hidden" />
-                        <label for="user-subscribe" class="check-label">
-                            <span class="check-span">
-                                <svg class="check-icon" width="25" height="25">
-                                    <use href="../images/icons/symbol-defs.svg#icon-check-minimal"></use>
-                                </svg>
-                            </span>
-                            Agree to subscribe to the newsletter
-                        </label>
-                    </div>
-                </form>
-                <button type="submit" class="subscribe-button">Send</button>
+                <div class="subscribe-wrap">
+                    <h2 class="subcribe-tittle">Newsletter</h2>
+                    <p class="subscribe-text">Every week we will send you new designs and information about sales.</p>
+                    <form action="" class="input-form">
+                        <div class="input-element">
+                            <label for="user-name" class="input-label">Name</label>
+                            <input type="text" 
+                            name="user-name" 
+                            id="user-name" 
+                            minlength="2" maxlength="16" 
+                            placeholder="Name"
+                            class="input-area"
+                            >
+                        </div>
+                        <div class="input-element">
+                            <label for="email" class="input-label">Email</label>
+                            <input type="email" 
+                            name="email"
+                            id="email" 
+                            placeholder="E-mail" 
+                            class="input-area error"
+                            >
+                        </div>
+                        <div class="input-element check-text-wrap">
+                            <input type="checkbox" name="user-subscribe" id="user-subscribe" value="true" class="check-input visually-hidden" />
+                            <label for="user-subscribe" class="check-label">
+                                <span class="check-span">
+                                    <svg class="check-icon" width="25" height="25">
+                                        <use href="../images/icons/symbol-defs.svg#icon-check-minimal"></use>
+                                    </svg>
+                                </span>
+                                Agree to subscribe to the newsletter
+                            </label>
+                        </div>
+                    </form>
+                    <button type="submit" class="subscribe-button">Send</button>
+                </div>
                 <picture>
-                    <source srcset="./images/subscribe-dt.jpg 1x, ./images/subscribe-dt-2x.jpg 2x" media="(min-width: 1440px)" />
+                    <source srcset="./images/subscribe-dt.jpg 1x, ./images/subscribe-dt-2x.jpg 2x" media="(min-width: 1024px)" />
                     <source srcset="./images/subscribe-tab.jpg 1x, ./images/subscribe-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                    <source srcset="../images/subscribe-mob.jpg 1x, ../images/subscribe-mob.jpg 2x" media="(min-width: 375px)" />
+                    <source srcset="./images/subscribe-mob.jpg 1x, ./images/subscribe-mob-2x.jpg 2x" media="(min-width: 375px)" />
                     <img class="subscribe-img" src="./images/subscribe-mob.jpg" alt="sofa" />
                 </picture>
             </div>

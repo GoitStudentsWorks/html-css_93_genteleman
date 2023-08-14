@@ -4,6 +4,9 @@
 .subscribe-area {
     padding: 64px 0;
 }
+.container{
+    max-width: 536px;
+}
 
 .subcribe-tittle {
     color: var(--primary-color);
@@ -31,7 +34,9 @@
     margin-bottom: 32px;
 }
 
-.input-element {}
+.input-element {
+    width: 100%;
+}
 
 .input-label{
     display: none;
@@ -46,6 +51,10 @@
 .input-area:hover{
     border-color: var(--primary-color);
 }
+
+/* .input-area.error{
+    border: 1px solid #E74A3B;
+} */
 
 .check-label{
     color: var(--gray);
@@ -99,11 +108,65 @@
 
 .subscribe-img{
     display: block;
+    min-width: 100%;
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution:192dpi){
-    .subscribe-img{
-
+@media  screen and (min-width: 768px) {
+    .container{
+        max-width: 768px;
+        padding: 0 32px;
+        margin: 0 auto;
     }
+
+        .subscribe-area {
+            padding: 100px 0;
+            
+            
+        }
+
+        .subscribe-wrap{
+            max-width: 536px;
+            display: block;
+        }
+
+        .subcribe-tittle{
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+
+        .subscribe-text{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 60px;
+        margin: 0 auto;
+    }
+      .subscribe-area {
+        max-width: 1156px;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+      }
+
+     .subscribe-wrap{
+            max-width: 536px;
+            display: block;
+        }
+
+    .subcribe-tittle{
+        text-align: start;
+        margin-bottom: 31px;
+    }
+
+    .subscribe-img{
+        display: block;
+        width: 460px;
+}
 }
