@@ -18,6 +18,15 @@ body {
     background-color: #FFFFFF;
 }
 
+.a-hover-focus {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.a-hover-focus:hover,
+.a-hover-focus:focus {
+    color: var(--iris);
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
