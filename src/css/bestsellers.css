@@ -111,8 +111,13 @@
     gap: 24px;
   }
 
+  .bestsellers-photo-main{
+    height: 495px;
+  }
+
   .bestsellers-first-conteiner {
     min-width: 536px;
+    width: 100%;
     margin-bottom: 0;
   }
 
