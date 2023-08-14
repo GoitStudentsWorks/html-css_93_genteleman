@@ -50,6 +50,11 @@
   stroke: #4d5ae5; /* replace with 'var(--iris)' when it value is added to the 'variables.css' */
 }
 
+.mobile-menu {
+  height: 100%;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     max-width: 768px;
