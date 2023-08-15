@@ -39,9 +39,6 @@
 }
 
 @media screen and (min-width: 768px){
-    .container{
-        max-width: 736px;
-    }
     .section-title{
         font-size: 32px;
         line-height: 1.4
@@ -65,9 +62,6 @@
     }
 }
 @media screen and (min-width: 1440px){
-    .container{
-        max-width: 1320px;
-    }
     .product-list{
         gap: 24px;
     }

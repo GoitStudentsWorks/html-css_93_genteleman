@@ -57,9 +57,6 @@ line-height: 1.4;
     justify-content: center;
     gap: 16px;
 }
-    .container {
-    max-width: 768px;
-    }
     .reviews-item:nth-child(2){
         display:block;
       }
@@ -89,9 +86,6 @@ line-height: 1.4;
         align-items: center;
         justify-content: center;
         gap: 24px;
-    }
-    .container {
-        max-width: 1440px;
     }
     .headline {
        padding-top: 60px;
