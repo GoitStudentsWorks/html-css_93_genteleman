@@ -144,11 +144,11 @@
 
 @media screen and (min-width:768px) {
 .container {
-    max-width: 768px;
 }
 
 .footer {
     padding: 36px 32px;
+    max-width: 768px;
 }
 
 .footer-div {
@@ -231,16 +231,16 @@
     font-size: 16px;
     line-height: 1.25;
 }
-
 }
 
 @media screen and (min-width: 1440px) {
 .container {
-    max-width: 1440px;
+
 }
 
 .footer {
     padding: 36px 60px;
+    max-width: 1440px;
 }
 
 .footer-div {
@@ -292,6 +292,5 @@
 .privacy-text {
     margin-top: 35px;
 }
-
 }
 
