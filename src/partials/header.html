@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header-container">
     <a href="#" class="header-logo">
-      <svg class="logo-icon" width="100" height="16">
+      <svg class="logo-icon">
         <use href="./images/icons/symbol-defs.svg#icon-logo"></use>
       </svg>
     </a>
@@ -28,35 +28,44 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="menu-open-button">
-      <svg class="burger-icon" width="24" height="24">
+    <button type="button" class="menu-open-btn" mob-menu-open>
+      <svg class="burger-icon">
         <use href="./images/icons/symbol-defs.svg#icon-align-justify"></use>
       </svg>
     </button>
   </div>
-  <!-- <div class="mobile-menu">
-    <button type="button" class="close-menu"></button>
-    <nav>
+
+  <div class="mobile-menu is-hidden" mob-menu>
+    <button type="button" class="menu-close-btn" mob-menu-close>
+      <svg class="menu-close-btn-icon">
+        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="menu-nav">
       <ul class="menu-nav-list">
         <li class="menu-nav-item">
-          <a class="menu-nav-link" href="#about_us">About us</a>
+          <a class="menu-nav-link" href="#about_us" mob-menu-close>About us</a>
         </li>
         <li class="menu-nav-item">
-          <a class="menu-nav-link" href="#our_products">Our products</a>
+          <a class="menu-nav-link" href="#our_products" mob-menu-close
+            >Our products</a
+          >
         </li>
         <li class="menu-nav-item">
-          <a class="menu-nav-link" href="#prices">Prices</a>
+          <a class="menu-nav-link" href="#prices" mob-menu-close>Prices</a>
         </li>
         <li class="menu-nav-item">
-          <a class="menu-nav-link" href="#bestsellers">Bestsellers</a>
+          <a class="menu-nav-link" href="#bestsellers" mob-menu-close
+            >Bestsellers</a
+          >
         </li>
         <li class="menu-nav-item">
-          <a class="menu-nav-link" href="#reviews">Reviews</a>
+          <a class="menu-nav-link" href="#reviews" mob-menu-close>Reviews</a>
         </li>
         <li class="menu-nav-item">
-          <a class="menu-nav-link" href="#">Contacts</a>
+          <a class="menu-nav-link" href="#" mob-menu-close>Contacts</a>
         </li>
       </ul>
     </nav>
-  </div> -->
+  </div>
 </header>

@@ -5,7 +5,7 @@
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid red; /* is's for orientation. must be deleted before pullrequest */
 }
 
 .header-container {
@@ -14,20 +14,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  outline: 1px solid green;
+  outline: 1px solid green; /* is's for orientation. must be deleted before pullrequest */
+}
+
+.header-logo {
+  line-height: 0;
+  padding: 36px 0;
 }
 
 .logo-icon {
   width: 100px;
   height: 16px;
   fill: var(--primary-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-logo:is(:hover, :focus) > .logo-icon {
+  fill: #061835; /* should be added to variables */
 }
 
 .header-nav {
   display: none;
 }
 
-.menu-open-button {
+.menu-open-btn {
   display: flex;
   border: none;
   background: transparent;
@@ -46,13 +56,84 @@
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-open-button:is(:hover, :focus) > .burger-icon {
+.menu-open-btn:is(:hover, :focus) > .burger-icon {
   stroke: #4d5ae5; /* replace with 'var(--iris)' when it value is added to the 'variables.css' */
 }
 
 .mobile-menu {
-  height: 100%;
-  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 88;
+  left: 0;
+  padding: 114px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: var(--white);
+  transform: translateX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-hidden {
+  transform: translateX(-100%);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.menu-close-btn {
+  position: absolute;
+  padding: 0;
+  display: flex;
+  border: none;
+  background: transparent;
+  padding: 28px 3px;
+  line-height: 0;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  top: -88px;
+  right: 16px;
+}
+
+.menu-close-btn-icon {
+  width: 32px;
+  height: 32px;
+  stroke: var(--primary-color);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-btn:is(:hover, :focus) .menu-close-btn-icon {
+  stroke: #4d5ae5; /* replace with 'var(--iris)' when it value is added to the 'variables.css' */
+}
+
+.menu-nav {
+  margin: 0 auto;
+}
+
+.menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  gap: 17px;
+}
+
+.menu-nav-link {
+  line-height: 1.5;
+}
+
+.menu-nav-link:is(:hover, :focus) {
+  color: #4d5ae5; /* replace with 'var(--iris)' when it value is added to the 'variables.css' */
 }
 
 @media screen and (min-width: 768px) {
@@ -62,13 +143,23 @@
     padding-right: 32px;
   }
 
-  .menu-open-button {
+  .header-logo {
+    line-height: 0;
+    padding: 40px 0 39px 0;
+  }
+
+  .menu-open-btn {
     padding: 28px 0 27px 0;
   }
 
   .burger-icon {
     width: 40px;
     height: 40px;
+  }
+
+  .menu-nav-link {
+    font-size: 18px;
+    line-height: 1.5;
   }
 }
 
@@ -79,7 +170,7 @@
     padding-right: 60px;
   }
 
-  .menu-open-button {
+  .menu-open-btn {
     display: none;
   }
 
@@ -101,5 +192,9 @@
     padding: 34px 0;
     font-size: 18px;
     line-height: 1.5;
+  }
+
+  .header-nav-link:is(:hover, :focus) {
+    color: #4d5ae5; /* replace with 'var(--iris)' when it value is added to the 'variables.css' */
   }
 }
