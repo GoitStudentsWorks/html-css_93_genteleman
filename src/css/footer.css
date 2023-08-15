@@ -15,12 +15,18 @@
     padding-top: 6px;
     padding-bottom: 6px;
     margin-bottom: 36px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-logo-icon {
     width: 100px;
     height: 16px;
     fill: var(--white);
+}
+
+.footer-logo-icon:hover,
+.footer-logo-icon:focus {
+    fill: var(--iris);
 }
 
 .footer-navigation {
@@ -99,11 +105,18 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
     width: 28px;
     height: 28px;
+    fill: var(--white);
+}
+
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+    fill: var(--iris);
 }
 
 .privacy-text {
@@ -272,9 +285,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* display: inline; */
     gap: 24px 82px;
-    /* width: 100%; */
+
 }
 
 .tel-mail-menu-item {
