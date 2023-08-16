@@ -1,9 +1,9 @@
-.container {
-    padding: 0 16px;
-    margin: 0 auto; 
-}
 .subscribe-container{
-    margin: 64px auto;
+}
+
+.subscribe-area{
+    margin: 0 auto;
+    padding: 64px 16px;
 }
 
 .subscribe-wrap{
@@ -147,19 +147,8 @@
 
 
 @media  screen and (min-width: 768px) {
-    .container{
-        max-width: 768px;
-        padding: 0 32px;
-        margin: 0 auto;
-    }
-        .subscribe-container {
-            margin: 100px auto;
-        }
-
         .subscribe-area {
-            padding: 100px 0;
-            
-            
+            padding: 100px 32px;
         }
 
         .subscribe-wrap{
@@ -187,21 +176,12 @@
 }
 }
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-        padding: 0 60px;
-        margin: 0 auto;
-        display: flex;
-        gap: 100px;
-        justify-content: center;
-    }
-
-
       .subscribe-area {
-        /* max-width: 1156px; */
+        max-width: 1440px;
+        padding: 100px 172px 86px;
         display: flex;
-        justify-content: center;
-        gap: 100px;
+        justify-content: space-between;
+        /* gap: 100px; */
       }
 
      .subscribe-wrap{
