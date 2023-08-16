@@ -1,0 +1,177 @@
+.about-section {
+  width: 100vw;
+  max-width: 375px;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+.about-text-block {
+  padding: 64px 16px;
+  background-color: var(--light-blue);
+}
+
+.about-title {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+.about-title::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: var(--primary-color);
+  left: 0;
+  top: 11.5px;
+}
+
+.about-subtitle {
+  font-size: 28px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.about-description {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-list {
+}
+
+.about-item {
+  line-height: 1.5;
+  text-align: center;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.about-item-achiv {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.about-item-sketch {
+}
+
+.about-img {
+  width: 100vw;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section {
+    width: 100%;
+    max-width: 768px;
+    padding: 0 32px 100px;
+    margin: 0 auto;
+  }
+
+  .about-text-block {
+    padding: 36px 64px;
+    margin-bottom: 30px;
+  }
+
+  .about-title {
+  }
+
+  .about-title::before {
+  }
+
+  .about-subtitle {
+    font-size: 32px;
+    line-height: 1.41;
+  }
+
+  .about-description {
+    font-size: 18px;
+  }
+
+  .about-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-item {
+    margin: 0;
+  }
+
+  .about-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .about-item-achiv {
+  }
+
+  .about-item-sketch {
+    font-size: 18px;
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-text-block {
+    max-width: 760px;
+    padding: 35px 69px 35px;
+    margin-bottom: 0;
+  }
+
+  .about-title {
+  }
+
+  .about-title::before {
+  }
+
+  .about-subtitle {
+  }
+
+  .about-description {
+  }
+
+  .about-list {
+  }
+
+  .about-item {
+  }
+
+  .about-item:not(:last-child) {
+  }
+
+  .about-item-achiv {
+    height: 69px;
+    margin-bottom: 23px;
+  }
+
+  .about-item-sketch {
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: 536px;
+    margin-left: 24px;
+  }
+}
