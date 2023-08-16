@@ -74,18 +74,19 @@
   overflow: hidden;
 }
 
-.mobile-menu-bottom {
+.menu-close-btn {
   background-color: transparent;
   height: 88px;
+  cursor: pointer;
+  border: none;
+  flex-shrink: 0;
 }
 
-.menu-close-btn {
+.close-block {
   padding: 28px 3px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  border: none;
   background: var(--light-blue);
   line-height: 0;
   position: absolute;
@@ -105,6 +106,7 @@
   margin: 0 auto;
   background-color: var(--white);
   padding-top: 114px;
+  padding-bottom: calc(100vh - 88px - 114px - 245px);
   width: 100%;
 }
 
@@ -174,12 +176,11 @@
     max-width: 768px;
   }
 
-  .mobile-menu-bottom {
-    background-color: transparent;
+  .menu-close-btn {
     height: 95px;
   }
 
-  .menu-close-btn {
+  .close-block {
     padding: 28px 0 27px;
     right: 30px;
   }
@@ -191,6 +192,7 @@
 
   .menu-nav {
     padding-top: 150px;
+    padding-bottom: calc(100vh - 95px - 150px - 328px);
   }
 
   .menu-nav-list {
