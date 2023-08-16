@@ -2,6 +2,13 @@
   padding-bottom: 64px;
 }
 
+.container-bestsellers{
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
 .bestsellers-title {
   color: var(--primary-color);
   font-size: 28px;
