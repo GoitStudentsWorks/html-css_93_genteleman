@@ -1,5 +1,12 @@
 .section-bestsellers{
-  margin-bottom: 64px;
+  padding-bottom: 64px;
+}
+
+.container-bestsellers{
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
 }
 
 .bestsellers-title {
@@ -46,7 +53,7 @@
 @media screen and (min-width: 768px) {
 
   .section-bestsellers{
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .container-bestsellers {
