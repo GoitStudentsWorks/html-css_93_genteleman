@@ -1,4 +1,3 @@
-/** @format */
 
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
