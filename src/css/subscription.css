@@ -47,25 +47,28 @@
     height: 50px;
     padding: 11px 20px;
     border: 1px solid var(--light-gray);
+    
 }
 
 .input-area:valid:not(:placeholder-shown){
     border: 1px solid var(--light-gray);
     outline: transparent;
+    
 }
 
 .input-area:invalid:not(:placeholder-shown) {
     border: 1px solid #E74A3B;
     outline: transparent;
-
 }
 
 .input-area:hover{
     border-color: var(--primary-color);
+
 }
 
 .input-area:invalid:not(:placeholder-shown) + .error-icon{
     fill: #E74A3B;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .error-icon:not(:placeholder-shown)  {
@@ -105,6 +108,7 @@
     align-items: center;
     flex-shrink: 0;
     margin-bottom: 32px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-button:hover, 
