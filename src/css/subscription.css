@@ -1,8 +1,10 @@
 .subscribe-area {
     padding: 64px 0;
+    
 }
 .subscribe-container{
     max-width: 375px;
+    margin: 0 auto;
 }
 
 .subcribe-tittle {
@@ -47,22 +49,31 @@
     border: 1px solid var(--light-gray);
 }
 
+.input-area:valid:not(:placeholder-shown){
+    border: 1px solid var(--light-gray);
+    outline: transparent;
+}
+
+.input-area:invalid:not(:placeholder-shown) {
+    border: 1px solid #E74A3B;
+    outline: transparent;
+
+}
+
 .input-area:hover{
     border-color: var(--primary-color);
 }
 
-.input-area:invalid {
-    display: inherit;
-    border: 1px solid #E74A3B;
+.input-area:invalid:not(:placeholder-shown) + .error-icon{
+    fill: #E74A3B;
 }
 
-.error-icon  {
+.error-icon:not(:placeholder-shown)  {
     position: absolute;
     right: 20px;
     top: 13px;
     border: none;
-    fill: #E74A3B;
-    z-index: -1;
+    fill: transparent;
 }
 
 .check-label{
