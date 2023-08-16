@@ -1,10 +1,13 @@
 .container {
     padding: 0 16px;
-    
+    margin: 0 auto; 
 }
 .subscribe-container{
-    max-width: 375px;
-    margin: 0 auto;
+    margin: 64px auto;
+}
+
+.subscribe-wrap{
+    margin-bottom: 30px;
 }
 
 .subcribe-tittle {
@@ -15,7 +18,6 @@
     line-height: 1.5;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 64px;
     margin-bottom: 20px;
 }
 
@@ -63,6 +65,7 @@
     outline: transparent;
 }
 
+.input-area:focus,
 .input-area:hover{
     border-color: var(--primary-color);
 
@@ -142,12 +145,16 @@
     min-width: 100%;
 }
 
+
 @media  screen and (min-width: 768px) {
-    .subscribe-container{
+    .container{
         max-width: 768px;
         padding: 0 32px;
         margin: 0 auto;
     }
+        .subscribe-container {
+            margin: 100px auto;
+        }
 
         .subscribe-area {
             padding: 100px 0;
@@ -165,22 +172,33 @@
             font-weight: 400;
             line-height: 1.5;
             text-transform: uppercase;
+            text-align: start;
+            margin-bottom: 30px;;
         }
 
         .subscribe-text{
             font-size: 18px;
             font-weight: 400;
             line-height: 1.5;
+            margin-bottom: 20px;
         }
+        .subscribe-wrap{
+            margin-bottom: 64px;
+}
 }
 @media screen and (min-width: 1440px) {
-    .subscribe-container {
+    .container {
         max-width: 1440px;
         padding: 0 60px;
         margin: 0 auto;
+        display: flex;
+        gap: 100px;
+        justify-content: center;
     }
+
+
       .subscribe-area {
-        max-width: 1156px;
+        /* max-width: 1156px; */
         display: flex;
         justify-content: center;
         gap: 100px;
@@ -188,7 +206,9 @@
 
      .subscribe-wrap{
             max-width: 536px;
-            display: block;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
         }
 
     .subcribe-tittle{
