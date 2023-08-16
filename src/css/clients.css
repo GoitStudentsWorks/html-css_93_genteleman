@@ -1,10 +1,11 @@
 .reviews-section{
  background-color: var(--light-blue, #F7FAFF);
- padding: 36px 16px;
+ padding: 36px 0;
 }
 .review-container{
   max-width: 375px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 .reviews-item{
     background-color: var(--white, #FFFFFF);
@@ -86,10 +87,11 @@ line-height: 1.4;
   }
 @media screen and (min-width: 1440px){
   .reviews-section {
-    padding: 60px;
+    padding: 60px 0;
   }
   .review-container {
     max-width: 1440px;
+    padding: 0 60px;
     }
     .reviews-list {
         display: flex;
