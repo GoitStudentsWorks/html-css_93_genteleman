@@ -88,6 +88,9 @@ line-height: 1.4;
   .reviews-section {
     padding: 60px;
   }
+  .review-container {
+    max-width: 1440px;
+    }
     .reviews-list {
         display: flex;
         align-items: center;
