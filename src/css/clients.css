@@ -97,9 +97,6 @@ line-height: 1.4;
         justify-content: center;
         gap: 24px;
     }
-    .headline {
-       padding-top: 60px;
-    }
     .reviews-item:nth-child(2), .reviews-item:nth-child(3){
         display:block;
       }
@@ -120,6 +117,7 @@ line-height: 1.4;
       .reviews {
         font-size: 17px;
         line-height: 1.5;
+        min-height: 153px;
     }
     .user-avatar-min{
         width: 56px;
