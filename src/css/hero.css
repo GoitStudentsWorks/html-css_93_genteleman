@@ -50,14 +50,7 @@
 }
 
 @media screen and (min-width: 768px){
-    .container{
-       padding-top: 64px;
-       padding-left: 32px;
-       padding-right: 29px;
-       width: 100%;
-       max-width: 768px;
-       background: none;
-    }
+
 
     #example1{
         height: 531px;
@@ -100,13 +93,6 @@
 }
 
 @media screen and (min-width: 1440px){
-    .container{
-        width: 100%;
-        max-width: 1440px;
-        padding-right: 60px;
-        padding-left: 57;
-    }
-
     #example1{
         height: 530px;
         flex-shrink: 0;
