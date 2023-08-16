@@ -1,5 +1,8 @@
 .prices {
     width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 
@@ -67,8 +70,9 @@
 /* adaptive */
 
 @media screen and (min-width: 768px) {
-    .container {
+    .prices {
         max-width: 768px;
+        padding: 0 32px;
     }
 
 
@@ -78,11 +82,8 @@
 }
 
 @media screen and (min-width: 1440px) {
-     .container {
-        max-width: 1320px;
-    }
-
-    .prices {
-        width: 1096px;
+     .prices {
+        max-width: 1440px;
+        padding: 0 172px;
     }
 }
