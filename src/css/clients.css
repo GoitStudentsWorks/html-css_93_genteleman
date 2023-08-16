@@ -61,8 +61,6 @@ line-height: 1.4;
     .review-container {
     max-width: 768px;
     }
-}
-
     .reviews-item:nth-child(2){
         display:block;
       }
@@ -85,7 +83,7 @@ line-height: 1.4;
        .user-block {
         margin-bottom: 14px;
     }
-
+  }
 @media screen and (min-width: 1440px){
   .reviews-section {
     padding: 60px;
