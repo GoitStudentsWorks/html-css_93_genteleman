@@ -1,3 +1,15 @@
+.hero-container{
+    background-image: url(../images/hero2-mob.jpg);
+    width: 100vw;
+    max-width: 375px;
+    max-height: 717px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 375px;
+    padding: 140px 16px 313px;
+    margin: 0 auto;
+}
 
 .hero-container{
     background-image: url(../images/hero2-mob.jpg);
@@ -103,14 +115,12 @@
 }
 
 @media screen and (min-width: 1440px){
-  
     .hero-container{
         max-width: 1440px;
         max-height: 694px;
         padding: 64px 60px 100px;
-    }
-  
-    #example1{
+    }    
+    .example1{
         height: 530px;
         flex-shrink: 0;
         background: url(../images/hero2-dt.jpg) center no-repeat, url(../images/hero1-dt.jpg) left bottom no-repeat, url(../images/hero3-dt.jpg) right top no-repeat;
