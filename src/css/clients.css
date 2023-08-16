@@ -62,8 +62,6 @@ line-height: 1.4;
     .review-container {
     max-width: 768px;
     }
-}
-
     .reviews-item:nth-child(2){
         display:block;
       }
