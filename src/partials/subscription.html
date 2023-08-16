@@ -8,11 +8,6 @@
                     <form action="" class="input-form">
                         <div class="input-element">
                             <label for="user-name" class="input-label">Name
-                                <span class="error-icon">
-                                    <svg width="24" height="24">
-                                        <use href="../images/icons/symbol-defs.svg#icon-error"></use>
-                                    </svg>
-                                </span>
                             </label>
                             <input type="text" 
                             name="user-name" 
@@ -22,6 +17,9 @@
                             class="input-area"
                             required
                                 />
+                            <svg class="error-icon" width="24" height="24">
+                                <use href="../images/icons/symbol-defs.svg#icon-error"></use>
+                            </svg>
                         </div>
                         <div class="input-element">
                             <label for="email" class="input-label">Email</label>
@@ -32,6 +30,9 @@
                             class="input-area error"
                             required
                             />
+                            <svg class="error-icon" width="24" height="24">
+                                <use href="../images/icons/symbol-defs.svg#icon-error"></use>
+                            </svg>
                         </div>
                         <div class="input-element check-text-wrap">
                             <input type="checkbox" name="user-subscribe" id="user-subscribe" value="true" class="check-input visually-hidden" />
