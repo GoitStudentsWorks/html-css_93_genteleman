@@ -1,10 +1,11 @@
 .reviews-section{
  background-color: var(--light-blue, #F7FAFF);
- padding: 36px 16px;
+ padding: 36px 0;
 }
 .review-container{
   max-width: 375px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 .reviews-item{
     background-color: var(--white, #FFFFFF);
@@ -86,19 +87,17 @@ line-height: 1.4;
   }
 @media screen and (min-width: 1440px){
   .reviews-section {
-    padding: 60px;
+    padding: 60px 0;
   }
   .review-container {
     max-width: 1440px;
+    padding: 0 60px;
     }
     .reviews-list {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 24px;
-    }
-    .headline {
-       padding-top: 60px;
     }
     .reviews-item:nth-child(2), .reviews-item:nth-child(3){
         display:block;
@@ -120,6 +119,7 @@ line-height: 1.4;
       .reviews {
         font-size: 17px;
         line-height: 1.5;
+        min-height: 153px;
     }
     .user-avatar-min{
         width: 56px;
