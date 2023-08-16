@@ -9,6 +9,7 @@
 .section-price {
     display: flex;
     margin: 0;
+    padding-top: 100px;
     padding-bottom: 64px;
 }
 
