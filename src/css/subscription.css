@@ -1,5 +1,5 @@
-.subscribe-area {
-    padding: 64px 0;
+.container {
+    padding: 0 16px;
     
 }
 .subscribe-container{
@@ -15,6 +15,7 @@
     line-height: 1.5;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 64px;
     margin-bottom: 20px;
 }
 
@@ -108,7 +109,6 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    margin-bottom: 32px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
