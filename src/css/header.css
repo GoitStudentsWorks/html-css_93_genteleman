@@ -1,15 +1,18 @@
 .header {
   background-color: var(--light-blue);
   position: relative;
-  width: 100vw;
-  max-width: 375px;
-  margin: 0 auto;
 }
 
 .header-container {
+  width: 100vw;
+  max-width: 375px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.header-menu {
   height: 100%;
   width: 100%;
-  padding: 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,8 +108,8 @@
 .menu-nav {
   margin: 0 auto;
   background-color: var(--white);
-  padding-top: 114px;
-  padding-bottom: calc(100vh - 88px - 114px - 245px);
+  padding-top: calc((100vh - 88px - (24px * 6 + 17px * 5)) / 2);
+  padding-bottom: calc((100vh - 88px - (24px * 6 + 17px * 5)) / 2);
   width: 100%;
 }
 
@@ -114,12 +117,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8px;
   gap: 17px;
 }
 
 .menu-nav-link {
   line-height: 1.5;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu:not(.is-open) {
@@ -151,11 +154,15 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    max-width: 768px;
   }
 
   .header-container {
+    width: 100%;
+    max-width: 768px;
     padding: 0 32px;
+  }
+
+  .header-menu {
   }
 
   .header-logo {
@@ -191,8 +198,8 @@
   }
 
   .menu-nav {
-    padding-top: 150px;
-    padding-bottom: calc(100vh - 95px - 150px - 328px);
+    padding-top: calc((100vh - 95px - (27px * 6 + 30px * 5)) / 2);
+    padding-bottom: calc((100vh - 95px - (27px * 6 + 30px * 5)) / 2);
   }
 
   .menu-nav-list {
@@ -207,9 +214,14 @@
 
 @media screen and (min-width: 1440px) {
   .header {
+  }
+
+  .header-container {
     max-width: 1440px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0 60px;
+  }
+
+  .header-menu {
   }
 
   .header-nav {
@@ -225,7 +237,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding: 0 8px;
+    padding-left: 8px;
     gap: 30px;
   }
 
@@ -234,6 +246,7 @@
     padding: 34px 0;
     font-size: 18px;
     line-height: 1.5;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-nav-link:is(:hover, :focus) {

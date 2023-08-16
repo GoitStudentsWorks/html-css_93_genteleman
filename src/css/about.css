@@ -2,7 +2,6 @@
   width: 100vw;
   max-width: 375px;
   margin: 0 auto;
-  padding-bottom: 64px;
 }
 
 .about-text-block {
@@ -75,7 +74,7 @@
   .about-section {
     width: 100%;
     max-width: 768px;
-    padding: 0 32px 100px;
+    padding: 0 32px;
     margin: 0 auto;
   }
 
@@ -129,7 +128,7 @@
   .about-section {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 60px 100px;
+    padding: 0 60px;
     display: flex;
     align-items: center;
   }
@@ -138,6 +137,7 @@
     max-width: 760px;
     padding: 35px 69px 35px;
     margin-bottom: 0;
+    margin-right: 24px;
   }
 
   .about-title {
@@ -172,6 +172,5 @@
   .about-img {
     width: 100%;
     max-width: 536px;
-    margin-left: 24px;
   }
 }
